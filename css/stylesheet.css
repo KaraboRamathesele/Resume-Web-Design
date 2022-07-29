@@ -114,32 +114,6 @@ text-decoration: underline;
   padding: 25px;
 }
 
-  /* The animation code */
-@keyframes animatedLogo {
-  0%   {transform:scale(1);}
-  50%  {transform:scale(1.2); }
-  100% {transform:scale(1);}
-}
-
-/* The element to apply the animation to */
-
-
-.animation-icon {
-  width: 50px;
-  height: 50px;
-  animation-name: animatedLogo;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  padding-right: 1.5rem;
-}
-
-.animation-icon:hover {
-  animation-play-state: paused;
-  filter:blur(0.5px);
-}
-
-
 footer {
   background-color: #fcb1a6;
   text-align: center;
