@@ -15,23 +15,22 @@
         <source media="(max-width:900px)" srcset="/Images/profilePhoto-med.jpg" />
         <img src="./Images/profilePhoto-lrg.jpg" alt="Picture of Karabo" class="headshot">
       </picture>
-              <h1>Karabo Ramathesele</h1>
-        <p class="intro">Hello!<br>
-          My name is Karabo and I'm an aspiring 
-          Software developer from Johannesburg, South Africa with an interest in
-          cloud computing,
-          web development and project management practices.
-          Multilingual, self-starter looking to gain experience, 
-          and contribute to best practice working models while keeping to strict targets
-          and growing organizational objectives.</p>
+      
+      <div>
+        <h1>Karabo Ramathesele</h1>
+        <h2 class="page-opener">Hello!</h2>
+        <p class="tag-line">Web Development | Project Management | AWS Certified </p>
+      </div>
+
       </header>
 
-<main class="main">
+<main class="main-content">
 
      <div class="menu">
         <aside>
           <h2>Menu</h2>
             <nav id="nav-menu">
+                <a href="#aboutme">AboutMe</a>
                 <a href="#education">Education</a>
                 <a href="#experience">Experience</a>
                 <a href="#languages">Languages</a>
@@ -44,6 +43,19 @@
   <section>
 
       <article>
+
+        <div>
+          <h2 id="aboutme" class="sectionColor">About Me</h2>
+        <p class="aboutme-intro">
+          My name is Karabo and I'm an aspiring 
+          Software developer from Johannesburg, South Africa with an interest in
+          cloud computing,
+          web development and project management practices.
+          Multilingual, self-starter looking to gain experience, 
+          and contribute to best practice working models while keeping to strict targets
+          and growing organizational objectives.
+        </p>
+        </div>
         
         <div>
           <h2 id="education" class="sectionColor">Education</h2>
@@ -142,10 +154,12 @@
 
  <footer>
     <h2>Get in Touch</h2>
-      <a href="https://www.linkedin.com/in/karabo-ramathesele-9aa7581a4" target="_blank"><img class="icon" src="Images/linkedinIcon.png" alt="Linkedin"></a>
+    <div class="animation-container">
+      <a href="https://www.linkedin.com/in/karabo-ramathesele-9aa7581a4" target="_blank"><img class="animation-icon" class="icon" src="Images/linkedinIcon.png" alt="Linkedin"></a>
       <!--Have not added mailto: php-->
-      <img class="icon" src="./Images/gmailIcon.png" alt="Gmail">
-      <a href="https://www.facebook.com/karabo.ramathesele" target="_blank"><img class="icon" src="./Images/facebookIcon.png" alt="Facebook"></a>
+      <img class="animation-icon" class="icon" src="./Images/gmailIcon.png" alt="Gmail">
+      <a href="https://www.facebook.com/karabo.ramathesele" target="_blank"><img class="animation-icon" class="icon" src="./Images/facebookIcon.png" alt="Facebook"></a>
+    </div>
  </footer>
 </body>
 </html>
