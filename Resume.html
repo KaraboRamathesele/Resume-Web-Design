@@ -7,9 +7,15 @@
     <title>Karabo's Digital Resume</title>
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <!--Bootstrap CSS-->
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+     <!-- Animation -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
   </head>
 
 <body>
@@ -19,28 +25,31 @@
   <!-- Navbar -->
   <nav class=" navbar navbar-expand-lg bg-secondary navbar-dark py-4 fixed-top">
     <div class="container">
-      <a href="#" class="navbar-brand fw-bold">Welcome</a>
+      <a href="#" class="navbar-brand fw-bold fs-4">Welcome</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#navmenu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#aboutme" class="nav-link">About Me</a>
+            <a href="#aboutme" class="nav-link fs-4">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="#education" class="nav-link">Education</a>
+            <a href="#education" class="nav-link fs-4">Education</a>
           </li>
           <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#experience" class="nav-link fs-4">Experience</a>
           </li>
           <li class="nav-item">
-            <a href="#languages" class="nav-link">Languages</a>
+            <a href="#languages" class="nav-link fs-4">Languages</a>
           </li>
           <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#skills" class="nav-link fs-4">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link fs-4">Projects</a>
           </li>
         </ul>
       </div>
@@ -49,83 +58,85 @@
   </nav>
 
   <!-- Header/Intro-->
-  <section class=" border border-2 text-dark p-5 text-center text-sm-start p-lg-5 pt-lg-5">
+  <section class="  text-dark p-5 text-center text-sm-center p-lg-5 pt-lg-5">
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
 
         <div>
           <h1>Hello, I'm <span class="text-danger">Karabo Ramathesele</span></h1>
-          <p class="lead fs-4 my-4">
+          <p class="lead fs-4 my-4 animate__animated animate__heartBeat text-nowrap">
             Web Development | Project Management | AWS Certified
           </p>
-          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Connect on Linkedin</button>
+          <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Connect on Linkedin</button>
         </div>
         <picture>
-          <source media="(max-width:650px)" srcset="/Images/profilePhoto-sml.jpg" />
-          <source media="(max-width:900px)" srcset="/Images/profilePhoto-med.jpg" />
-          <img class="img-fluid rounded-circle border border-3 w-25 d-sm-block" src="/Images/profilePhoto-lrg.jpg" alt="Picture of Karabo">
+          <source media="(max-width:650px)" srcset="/Images/profilePhoto-sml.jpg" type="image/svg+xml"/>
+          <source media="(max-width:1140px)" srcset="/Images/profilePhoto-med.jpg" type="image/svg+xml"/>
+          <img class="img-fluid float-lg-end rounded-circle border border-3 w-25 d-sm-block" src="/Images/profilePhoto-lrg.jpg" alt="Picture of Karabo">
         </picture>
       </div>
 
     </div>
   </section>
 
-     <!-- Cards -->
-     <section class="p-5">
-      <div class="container">
-        <div class="row text-center g-4">
+   <!-- Cards -->
+   <section class="p-5">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">Web Design</h3>
+              <p class="card-text">Gain a solid foundation in web design to create beautifully crafted websites. Learn the essentials of HTML, CSS and Bootstrap to host your own digital resumé.</p>
+              <a href="https://www.codespace.co.za/courses/web-design/" class="btn btn-danger" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="col-md">
+            <div class="card bg-danger text-light" style="--bs-bg-opacity: .7;">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h3 class="card-title mb-3">Collaboration</h3>
+                <p class="card-text lh-base"> Successfully work toward a common goal in cross-functional teams, start with communication, clear expectations and mutual trust</p>
+                <a href="https://slack.com/blog/collaboration/5-tips-for-effective-collaboration-at-work" class="btn btn-secondary" target="_blank">Read More</a>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-md">
           <div class="col-md">
             <div class="card bg-secondary text-light">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
-                  <i class="bi bi-laptop"></i>
+                  <i class="bi bi-cloud"></i>
                 </div>
-                <h3 class="card-title mb-3">Web Design</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maxime laboriosam hic perspiciatis, doloribus eius.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <h3 class="card-title mb-3">AWS Cloud</h3>
+                <p class="card-text ">Earners have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge.</p>
+                <a href="https://www.credly.com/badges/27020f73-e2e0-4ca6-b11d-6f1e4342a7cd/public_url" class="btn btn-danger" target="_blank">Read More</a>
               </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="col-md">
-              <div class="card bg-dark text-light">
-                <div class="card-body text-center">
-                  <div class="h1 mb-3">
-                    <i class="bi bi-people-fill"></i>
-                  </div>
-                  <h3 class="card-title mb-3">Collaboration</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maxime laboriosam hic perspiciatis, doloribus eius.</p>
-                  <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-              </div>
-          </div>
-          </div>
-          <div class="col-md">
-            <div class="col-md">
-              <div class="card bg-secondary text-light">
-                <div class="card-body text-center">
-                  <div class="h1 mb-3">
-                    <i class="bi bi-cloud"></i>
-                  </div>
-                  <h3 class="card-title mb-3">Cloud</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias maxime laboriosam hic perspiciatis, doloribus eius.</p>
-                  <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-              </div>
-          </div>
         </div>
       </div>
-     </section>
+    </div>
+   </section>
 
-     
-<div class="container content">
-  <section class="p-2 lh-base">
+<!-- Learn Section -->
 
-      <article>
-
-        <div>
-          <h2 id="aboutme" class="sectionColor">About Me</h2>
-        <p class="aboutme-intro">
+<section id="aboutme" class="p-5 ">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="/Images/aboutme.svg" class="img-fluid" alt="">
+      </div>
+      <div class="col-md p-5">
+        <h2  class="sectionColor fs-1">About Me</h2>
+        <p class="lead aboutme-intro fs-2">
           My name is Karabo and I'm an aspiring 
           Software developer from Johannesburg, South Africa with an interest in
           cloud computing,
@@ -134,51 +145,68 @@
           and contribute to best practice working models while keeping to strict targets
           and growing organizational objectives.
         </p>
-        </div>
-        
-        <div>
-          <h2 id="education" class="sectionColor">Education</h2>
-          <h3>Intro to Web at <a class="academyLink" href="http://codespace.co.za/" target="_blank">CodeSpace Academy</a></h3>
-        <p>
-          <ul class="circle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+
+<section id="education" class="p-5 bg-dark text-light" style="--bs-bg-opacity: .8;">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md p-5 text-light">
+        <div class="lead">
+          <h2 id="education" class="sectionColor fs-1">Education</h2>
+          <h3>Intro to Web at <a class="academyLink lead fs-3" href="http://codespace.co.za/" target="_blank">CodeSpace Academy</a></h3>
+          <ul class="circle fs-4 lh-base">
             <li>Learning HTML and CSS fundamentals</li>
             <li>Completing a foundational digital resume website</li>
           </ul>
-        </p>
         </div>
 
       <div>
-        <h3>Problem Solving Using Computational Thinking at <a class="academyLink" href="
+        <h3>Problem Solving Using Computational Thinking at <a class="academyLink lead fs-2" href="
           https://www.coursera.org/account/accomplishments/certificate/F9WN4XT7A8SB" target="_blank">Michighan University</a></h3>
-        <p>
-          <ul class="circle">
+          <ul class="circle fs-4 lh-base">
             <li>Algorithm graphic depiction using LucidChart</li>
             <li>Foundations of Computational Thinking interacting with real-life case study material
               for problems to be solved with computers.
             </li>
           </ul>
-        </p>
       </div>
 
       <div>
-        <h3>Foundations of Project Management at <a class="academyLink" href="
+        <h3>Foundations of Project Management at <a class="academyLink lead fs-2" href="
           https://coursera.org/share/9f3b0f12742d630eba78fb2e121bfdda" target="_blank">Google</a></h3>
         <p>
-          <ul class="circle">
-            <li>Algorithm graphic depiction using LucidChart</li>
-            <li>Foundations of Computational Thinking interacting with real-life case study material
-              for problems to be solved with computers.
+          <ul class="circle fs-4 lh-base">
+            <li>Coordinate a team best suitable to complete project, using PM principles for clearly identifying a project objective and the success beyond deployment</li>
+            <li>Agile principles, using Jira software to schedule the project using Kanban board and tracking the project. Change management and stakeholder satisfaction
             </li>
           </ul>
         </p>
       </div>
- </section>
+      </div>
+      <div class="col-md">
+        <img src="/Images/education.svg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
- <section>
-    <h2 id="experience" class="sectionColor">Experience</h2>
-    <h4>Online Tutor</h4>
+<!-- Experience -->
+<section id="experience" class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="/Images/experience.svg" class="img-fluid" alt="">
+      </div>
+      <div class="col-md p-5">
+        <h2 id="experience" class="sectionColor fs-1">Experience</h2>
+    <h4 class="fs-3 mt-3">Online Tutor</h4>
     <p>
-     <ul class="circle">
+     <ul class="circle fs-4">
       <li>
         Freelance online teaching: Mathematics and Physical Science 
       </li>
@@ -187,8 +215,8 @@
       </li>
      </ul>
     </p>
-    <h4>Residence Mentorship Council Chairperson</h4>
-     <ul class="circle">
+    <h4 class="fs-3">Residence Mentorship Council Chairperson</h4>
+     <ul class="circle fs-4">
       <li>
         Lead a team of 25 residence mentors remotely during the pandemic
       </li>
@@ -196,77 +224,64 @@
         Managing decisions and collaborating to schedule student orientation week
       </li>
      </ul>
- </section>
-
- <section>
-  <h2 id="languages" class="sectionColor">Languages</h2>
-  <p>
-   <ul class="circle">
-    <li>
-      English
-    </li>
-    <li>
-      Sesotho
-    </li>
-    <li>
-      Zulu
-    </li>
-   </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Languages -->
 
- <section>
-    <h2 id="skills" class="sectionColor">Skills</h2>
-      <ul class="circle">
+<section id="languages" class="p-5 bg-dark text-light" style="--bs-bg-opacity: .8;" >
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md p-5">
+        <h2  class="sectionColor fs-1">Languages</h2>
+        <p class="lead">
+          <ul class="circle fs-4">
+           <li>
+             English
+           </li>
+           <li>
+             Sesotho
+           </li>
+           <li>
+             Zulu
+           </li>
+          </ul>
+      </div>
+      <div class="col-md">
+        <img src="/Images/lang.svg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="p-5 ">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="/Images/skills.svg" class="img-fluid" alt="">
+      </div>
+      <div class="col-md p-5">
+        <h2 id="skills" class="sectionColor fs-1">Skills</h2>
+      <ul class="circle fs-4">
+        <li>HTML/CSS</li>
         <li>Agile Foundations: Scrum Basics and Jira Software</li>
         <li>Project Management</li>
         <li>Public Speaking</li>
         <li>Leadership</li>
         <li>Microsoft Suite</li>
       </ul>
-    </section>
-
-     </article>
-
-    </div>
-  </div>
-
-  <!-- Programming Languages -->
-  <section class="p-5">
-    <div class="container ">
-      <div class="row g-4">
-        <div class="col-md">
-          <h2 class="text-center mb-4"></h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item">
-              <span class="fw-bold">Learning Path: </span> FrontEnd Developer
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">HTML: </span> Intermediate
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">CSS: </span> Intermediate
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">JavaScript: </span>
-              Beginner
-            </li>
-            <li class="list-group-item">
-              <span class="fw-bold">Vue.js: </span> Beginner
-            </li>
-          </ul>
-        </div>
-        <div class="col-md">
-          <img class="img-fluid w-50 d-none d-sm-block" src="/Images/learning.svg" alt="">
-        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Accordion-->
 
-  <section class="p-5" id="projects">
-    <div class="container">
+  <section class="p-5 " id="projects">
+    <div class="container-fluid">
       <h2 class="text-center mb-4">Projects</h2>  
       <div class="accordion accordion-flush" id="Projects">
         <!-- Item 1 -->
@@ -277,7 +292,7 @@
             </button>
           </h2>
           <div id="project-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
+            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
           </div>
         </div>
         <!-- Item 2 -->
@@ -288,7 +303,7 @@
             </button>
           </h2>
           <div id="project-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
+            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
           </div>
         </div>
         <!-- Item 3 -->
@@ -299,7 +314,7 @@
             </button>
           </h2>
           <div id="project-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
+            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
           </div>
         </div>
       
@@ -310,19 +325,19 @@
 <!-- Footer -->
 <footer class="text-white text-center position-relative p-5">
   <div class="container">
-    <p class="lead fw-bold">Get in Touch</p>
+    <p class="lead fw-bold fs-3">Get in Touch</p>
     
     <a href="https://www.linkedin.com/in/karabo-ramathesele-9aa7581a4" target="_blank">
-      <i class="bi bi-linkedin h1"></i>
+      <i class="animate__animated animate__bounce bi bi-linkedin h1"></i>
     </a>
     <a href="https://www.facebook.com/karabo.ramathesele" target="_blank">
-      <i class="bi bi-facebook h1 p-5"></i>
+      <i class=" animate__animated animate__bounce  bi bi-facebook h1 p-5"></i>
     </a>
     <a href="#" >
-      <i class="bi bi-envelope h1"></i>
+      <i class="animate__animated animate__bounce bi bi-envelope h1 "></i>
     </a>
     
-    <p class="lead p-5">Copyright &copy; 2022</p>
+    <p class="lead p-5 fs-4">Copyright &copy; 2022</p>
     <a href="#" class="position-absolute bottom-0 end-0 p-5">
       <i class="bi bi-arrow-up-circle h1"></i>
     </a>
@@ -354,9 +369,8 @@
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

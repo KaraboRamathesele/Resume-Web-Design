@@ -130,12 +130,16 @@ footer {
   text-decoration:none;
 }
 
-/*Form*/
-@media screen and (min-width:768px){
-  .news-input{
-    width:50%;
-  }
-}
+
+.animate__animated.animate__bounce:hover{
+  --animate-duration: 3s;
+ }
+
+ .animate__animated.animate__heartBeat{
+  --animate-duration: 10s;
+ }
+
+
 
 /*Medium device- 650px > apply */
 @media screen and (min-width:650px) {
