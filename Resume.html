@@ -64,16 +64,23 @@
 
         <div>
           <h1>Hello, I'm <span class="text-danger">Karabo Ramathesele</span></h1>
-          <p class="lead fs-4 my-4 animate__animated animate__heartBeat text-nowrap">
+          <p class="lead fs-4 my-4 animate__animated animate__heartBeat text-nowrap " >
             Web Development | Project Management | AWS Certified
           </p>
           <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Connect on Linkedin</button>
         </div>
-        <picture>
-          <source media="(max-width:650px)" srcset="/Images/profilePhoto-sml.jpg" />
-          <source media="(max-width:1140px)" srcset="/Images/profilePhoto-med.jpg" />
-          <img class="img-fluid float-lg-end rounded-circle border border-3 w-25 d-sm-block" src="/Images/profilePhoto-lrg.jpg" alt="Picture of Karabo">
-        </picture>
+        <div >
+          <picture>
+            <!--Use this image if the screen until 576px wide -->
+            <source media="(max-width:576px)" srcset="/Images/profilePhoto-sml.jpg" />
+  
+            <!-- Use image until screen 768px wide -->
+            <source media="(max-width:768px)" srcset="/Images/profilePhoto-med.jpg" />
+  
+            <img class="img-fluid rounded-circle border border-3 w-25 d-sm-block" src="/Images/profilePhoto-lrg.jpg" alt="Picture of Karabo">
+          </picture>
+        </div>
+
       </div>
 
     </div>
@@ -288,7 +295,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-one">
-              Project 1
+              Digital Resumé
             </button>
           </h2>
           <div id="project-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
@@ -299,11 +306,11 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-two">
-              Project 2
+              To Do List
             </button>
           </h2>
           <div id="project-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
+            <div class="accordion-body lead">Coming Soon!!</div>
           </div>
         </div>
         <!-- Item 3 -->
