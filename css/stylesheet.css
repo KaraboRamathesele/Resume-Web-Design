@@ -63,6 +63,19 @@ text-decoration: underline;
   border: 3px solid #ce4257 ;
 }
 
+.pictureSize1 {
+  width: 10em;
+}
+
+.pictureSize2 {
+  width: 20em;
+}
+
+.pictureSize3 {
+  /*height: 35em !important;*/
+  width: 27em;
+}
+
 .icon {
   margin: 0.3rem;
   width:42px;
