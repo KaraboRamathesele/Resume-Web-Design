@@ -1,219 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+
+}
+
+
 *{
-  box-sizing: border-box;
-}
-
-html{
-  /*font-size: 10px*/
-  font-size: 62.5%;
-
-}
-
-body::before{
-  display:block;
-  content: '';
-  height:60px;
-
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
 }
 
 body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size:1.5rem;
-  background: url(../Images/bg-paper@2x.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  margin: 20px;
-  padding: 30px;
-  display:  flex;
-  flex-direction: column;
+    background-color: var(--mainBgColor);            
 }
 
-header {
-  text-align: center;
-  color:black;
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
 }
 
-header > p {
-  font-size: 18px;
-  font-weight: 400px;
-  margin-left: 3%; margin-right: 3%;
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
 }
 
-.tag-line{
-  display: inline-block;
-  letter-spacing: 1px;
-  font-size:1.2rem;
+li{
+    line-height: 1.9em;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  text-decoration: underline;
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
 }
 
-h2 {
-text-decoration: underline;
-
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.headshot {
-  border-width: 3px;
-  width: 20%;
-  border-radius: 50%;
-  border: 3px solid #ce4257 ;
-}
-
-.pictureSize1 {
-  width: 10em;
-}
-
-.pictureSize2 {
-  width: 20em;
-}
-
-.pictureSize3 {
-  /*height: 35em !important;*/
-  width: 27em;
-}
-
-.icon {
-  margin: 0.3rem;
-  width:42px;
-  height:42px;
-}
-
-.sectionColor {
-  color: rgb(247, 93, 93);
-}
-
-.menu {
-  color: #1e1b18;
-  padding: 1rem;
-  background-color: #df7890;
-  text-align: center;
-}
-
-.menu a {
-  color: #1e1b18;
-  text-decoration: none;
-  font-weight:600;
-  display: flex;
-  flex-wrap: wrap;
-  word-spacing: 10px;
-
-}
-
-.page-opener{
-  font-size: 3rem;
-}
-
-#nav-menu {
-  list-style-type: none;
-  display:flex;
-  flex-direction: row; 
-  padding: 20px;
-  margin:20px;
-}
-
-.main-content {
-  display:flex;
-  flex-direction: column;
-  overflow: unset;
-  
-}
-
-.academyLink {
-  text-decoration: none;
-  color:  rgb(247, 93, 93);
-}
-
-.circle {
-  list-style-type: circle;
-}
-
-.content{
-  padding: 25px;
-  line-height: 1.5;
-}
-
-footer {
-  background-color: #fcb1a6;
-  text-align: center;
-  color: #1e1b18;
-  text-decoration:none;
-}
-
-
-.animate__animated.animate__bounce:hover{
-  --animate-duration: 3s;
- }
-
- .animate__animated.animate__heartBeat{
-  --animate-duration: 10s;
- }
-
-
-
-/*Medium device- 650px > apply */
-@media screen and (min-width:650px) {
-  .tag-line{
-    font-size: 1.4rem;
-  }
-
-  .headshot {
-    border-width: 3px;
-    width: 17%;
-    border-radius: 50%;
-    border: 2px solid #ce4257 ;
-  }
-
-  .main {
-    display:flex;
-    flex-direction: row;
-    overflow: unset;
-  }
-
-  #nav-menu {
+#wrapper--hero{
     display: flex;
-    flex-direction: row;
-
-  }
-
+    align-items: center;
+    gap: 4em;
 }
 
-/*Large device */
-@media screen and (min-width:920px) {
-  .tag-line{
-    font-size: 1.8rem;
-  }
+#bio, a{
+    font-weight: 300;
+}
 
-  .headshot {
-    border-width: 3px;
-    width: 15%;
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-  }
+}
 
-  .main-content {
-    display:flex;
-    flex-direction: row;
-    overflow: unset;
-  }
+#email{
+    color: var(--mainTextColor);
+}
 
-  #nav-menu {
+#socials--list{
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
 
-  .menu a {
-    line-height: 1.5;
-  }
+#socials--list a{
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
 
-  .aboutme-intro{
-    width: 20ch;
-    letter-spacing: 1.5px;
-    display:inline;
-  }
+#socials--list a:hover{
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+#qualifications--list{
+    list-style: none;
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
 
 }
 
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
 
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+
+@media(max-width:600px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}

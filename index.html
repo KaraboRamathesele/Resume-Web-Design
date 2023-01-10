@@ -1,375 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Karabo's Website" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="Karabo's Website"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Karabo's Digital Resume</title>
-    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
-   
+    <link rel="icon" type="image/x-icon" href="./assets/Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
   </head>
+  <body>
+    <!-- Hero  -->
+    <div id="container--main">
+      <section id="wrapper--hero" class="section--page">
+        <img
+          id="profile-pic"
+          src="./assets/Images/profilePhoto-med.jpg"
+          alt=""
+        />
 
-<body>
+        <div>
+          <h1 id="user-name">Karabo Ramathesele</h1>
+          <p id="bio">Jnr FrontEnd Developer</p>
+          <p id="email">👉 karaboramathesele8115@gmail.com</p>
+        </div>
+      </section>
 
+      <section class="section--page">
+        <div class="socials--list">
+          <a
+            href="https://www.linkedin.com/in/karabo-ramathesele-9aa7581a4"
+            target="_blank"
+            >Linkedin</a
+          >
+          <a href="https://www.facebook.com/karabo.ramathesele" target="_blank"
+            >Facebook</a
+          >
+          <a href="#">Github</a>
+          <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
+        </div>
+      </section>
 
-
-  <!-- Navbar -->
-  <nav class=" navbar navbar-expand-lg bg-secondary navbar-dark py-4 fixed-top">
-    <div class="container">
-      <a href="#" class="navbar-brand fw-bold fs-4">Welcome</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#aboutme" class="nav-link fs-4">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#education" class="nav-link fs-4">Education</a>
-          </li>
-          <li class="nav-item">
-            <a href="#experience" class="nav-link fs-4">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a href="#languages" class="nav-link fs-4">Languages</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link fs-4">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link fs-4">Projects</a>
-          </li>
+      <!--  Skills and Qualifications -->
+      <section class="section--page">
+        <h2>Skills & Qualifications</h2>
+        <ul id="qualifications--list">
+          <li>✔️ Experience with front & backend development</li>
+          <li>✔️ Project Management</li>
+          <li>✔️ Agile Foundations: Scrum Basics and Jira Software</li>
+          <li>✔️ JavaScript, Vue.js, React</li>
+          <li>✔️ SQL Database and Web Components, Lit - Web Components</li>
+          <li>✔️ AWS</li>
         </ul>
-      </div>
+      </section>
 
-    </div>
-  </nav>
+      <section class="section--page">
+        <h2>Tech stack</h2>
 
-  <!-- Header/Intro-->
-  <section class="  text-dark p-5 text-center text-sm-center p-lg-5 pt-lg-5">
-    <div class="container">
-      <div class="d-sm-flex align-items-center justify-content-center">
+        <div id="wrapper--techstack__items">
+          <div class="card--techstack">
+            <span> JavaScript, Vue.js, NodeJS</span>
+          </div>
+          <div class="card--techstack"><span></span></div>
+          <div class="card--techstack"><span>React</span></div>
+          <div class="card--techstack"><span> MySQL</span></div>
+        </div>
+      </section>
 
-        <div>
-          <h1>Hello, I'm <span class="text-danger">Karabo Ramathesele</span></h1>
-          <p class="lead fs-4 my-4 animate__animated animate__heartBeat text-nowrap " >
-            Web Development | Project Management | AWS Certified
+      <section id="work-history-wrapper" class="section--page">
+        <h2>Education</h2>
+
+        <div class="line-break"></div>
+        <div class="card--work-history">
+          <strong
+            >🚧 Intro to Web at
+            <a href="http://codespace.co.za/" target="_blank"
+              >CodeSpace Academy</a
+            ></strong
+          >
+          <p>06/2022 - 01/2023</p>
+          <p>
+            Gain a solid foundation in web design to create beautifully crafted
+            websites. Learn the essentials of HTML, CSS and Bootstrap to host
+            your own digital resumé.
           </p>
-          <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Connect on Linkedin</button>
-        </div>
-        <div>
-          <picture>
-            <!--Use this image if the screen until 576px wide -->
-            <source media="(max-width:576px)" srcset="/Images/profilePhoto-sml.jpg" class="pictureSize1" />
-  
-            <!-- Use image until screen 768px wide -->
-            <source media="(max-width:768px)" srcset="/Images/profilePhoto-med.jpg" class="pictureSize2" />
-  
-            <img class="img-fluid rounded-circle border border-3 w-25 d-sm-block pictureSize3" src="/Images/profilePhoto-lrg.jpg" alt="Picture of Karabo">
-          </picture>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-   <!-- Cards -->
-   <section class="p-5">
-    <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-md">
-          <div class="card bg-secondary text-light">
-            <div class="card-body text-center">
-              <div class="h1 mb-3">
-                <i class="bi bi-laptop"></i>
-              </div>
-              <h3 class="card-title mb-3">Web Design</h3>
-              <p class="card-text">Gain a solid foundation in web design to create beautifully crafted websites. Learn the essentials of HTML, CSS and Bootstrap to host your own digital resumé.</p>
-              <a href="https://www.codespace.co.za/courses/web-design/" class="btn btn-danger" target="_blank">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="col-md">
-            <div class="card bg-danger text-light" style="--bs-bg-opacity: .7;">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <h3 class="card-title mb-3">Collaboration</h3>
-                <p class="card-text lh-base"> Successfully work toward a common goal in cross-functional teams, start with communication, clear expectations and mutual trust</p>
-                <a href="https://slack.com/blog/collaboration/5-tips-for-effective-collaboration-at-work" class="btn btn-secondary" target="_blank">Read More</a>
-              </div>
-            </div>
-        </div>
-        </div>
-        <div class="col-md">
-          <div class="col-md">
-            <div class="card bg-secondary text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-cloud"></i>
-                </div>
-                <h3 class="card-title mb-3">AWS Cloud</h3>
-                <p class="card-text ">Earners have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge.</p>
-                <a href="https://www.credly.com/badges/27020f73-e2e0-4ca6-b11d-6f1e4342a7cd/public_url" class="btn btn-danger" target="_blank">Read More</a>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-   </section>
-
-<!-- Learn Section -->
-
-<section id="aboutme" class="p-5 ">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md">
-        <img src="/Images/aboutme.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-md p-5">
-        <h2  class="sectionColor fs-1">About Me</h2>
-        <p class="lead aboutme-intro fs-2">
-          My name is Karabo and I'm an aspiring 
-          Software developer from Johannesburg, South Africa with an interest in
-          cloud computing,
-          web development and project management practices.
-          Multilingual, self-starter looking to gain experience, 
-          and contribute to best practice working models while keeping to strict targets
-          and growing organizational objectives.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Education -->
-
-<section id="education" class="p-5 bg-dark text-light" style="--bs-bg-opacity: .8;">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md p-5 text-light">
-        <div class="lead">
-          <h2 id="education" class="sectionColor fs-1">Education</h2>
-          <h3>Intro to Web at <a class="academyLink lead fs-3" href="http://codespace.co.za/" target="_blank">CodeSpace Academy</a></h3>
-          <ul class="circle fs-4 lh-base">
-            <li>Learning HTML and CSS fundamentals</li>
-            <li>Completing a foundational digital resume website</li>
+          <ul>
+            <li>
+              Ecommerces monthly usage minutes from 15 million to 30 million
+              minutes within my first 4 months
+            </li>
+            <li>
+              Produced educational video content which resulted in 300k+ views
+              on youtube
+            </li>
+            <li>
+              Produced SEO campaigns and content to gain market share for
+              related keywords.
+            </li>
           </ul>
         </div>
 
-      <div>
-        <h3>Problem Solving Using Computational Thinking at <a class="academyLink lead fs-2" href="
-          https://www.coursera.org/account/accomplishments/certificate/F9WN4XT7A8SB" target="_blank">Michighan University</a></h3>
-          <ul class="circle fs-4 lh-base">
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 Problem Solving Using Computational Thinking at
+            <a
+              class="academyLink lead fs-2"
+              href="
+          https://www.coursera.org/account/accomplishments/certificate/F9WN4XT7A8SB"
+              target="_blank"
+              >Michighan University</a
+            ></strong
+          >
+          <p>05/2022 - 06-2022</p>
+          <p>
+            Produced content showcasing new tech, tutorials & interviews with
+            top developers.
+          </p>
+          <ul>
             <li>Algorithm graphic depiction using LucidChart</li>
-            <li>Foundations of Computational Thinking interacting with real-life case study material
-              for problems to be solved with computers.
+            <li>
+              Foundations of Computational Thinking interacting with real-life
+              case study material for problems to be solved with computers.
             </li>
           </ul>
-      </div>
+        </div>
 
-      <div>
-        <h3>Foundations of Project Management at <a class="academyLink lead fs-2" href="
-          https://coursera.org/share/9f3b0f12742d630eba78fb2e121bfdda" target="_blank">Google</a></h3>
-        <p>
-          <ul class="circle fs-4 lh-base">
-            <li>Coordinate a team best suitable to complete project, using PM principles for clearly identifying a project objective and the success beyond deployment</li>
-            <li>Agile principles, using Jira software to schedule the project using Kanban board and tracking the project. Change management and stakeholder satisfaction
+        <div class="line-break"></div>
+
+        <div class="card--work-history">
+          <strong
+            >🚧 Foundations of Project Management at
+            <a
+              class="academyLink lead fs-2"
+              href="
+              https://coursera.org/share/9f3b0f12742d630eba78fb2e121bfdda"
+              target="_blank"
+              >Google</a
+            ></strong
+          >
+          <p>03/2022 - 05/2022</p>
+          <p></p>
+          <ul>
+            <li>
+              Coordinate a team best suitable to complete project, using PM
+              principles for clearly identifying a project objective and the
+              success beyond deployment
+            </li>
+            <li>
+              Agile principles, using Jira software to schedule the project
+              using Kanban board and tracking the project. Change management and
+              stakeholder satisfaction
             </li>
           </ul>
-        </p>
-      </div>
-      </div>
-      <div class="col-md">
-        <img src="/Images/education.svg" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
 
-<!-- Experience -->
-<section id="experience" class="p-5">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md">
-        <img src="/Images/experience.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-md p-5">
-        <h2 id="experience" class="sectionColor fs-1">Experience</h2>
-    <h4 class="fs-3 mt-3">Online Tutor</h4>
-    <p>
-     <ul class="circle fs-4">
-      <li>
-        Freelance online teaching: Mathematics and Physical Science 
-      </li>
-      <li>
-        Discord app used to conduct lessons for grade 10, 11 and 12
-      </li>
-     </ul>
-    </p>
-    <h4 class="fs-3">Residence Mentorship Council Chairperson</h4>
-     <ul class="circle fs-4">
-      <li>
-        Lead a team of 25 residence mentors remotely during the pandemic
-      </li>
-      <li>
-        Managing decisions and collaborating to schedule student orientation week
-      </li>
-     </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="line-break"></div>
 
-<!-- Languages -->
-
-<section id="languages" class="p-5 bg-dark text-light" style="--bs-bg-opacity: .8;" >
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md p-5">
-        <h2  class="sectionColor fs-1">Languages</h2>
-        <p class="lead">
-          <ul class="circle fs-4">
-           <li>
-             English
-           </li>
-           <li>
-             Sesotho
-           </li>
-           <li>
-             Zulu
-           </li>
+        <div class="card--work-history">
+          <strong>
+            🚧Construction Project Management | University of Cape Town</strong
+          >
+          <p>03/2019 - Incomplete</p>
+          <p></p>
+          <ul>
+            <li>
+              Scheduled workflow for daily tasks, supervised by lead project
+              manager while volunteering for building social government housing.
+            </li>
           </ul>
-      </div>
-      <div class="col-md">
-        <img src="/Images/lang.svg" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="p-5 ">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-md">
-        <img src="/Images/skills.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-md p-5">
-        <h2 id="skills" class="sectionColor fs-1">Skills</h2>
-      <ul class="circle fs-4">
-        <li>HTML/CSS</li>
-        <li>Agile Foundations: Scrum Basics and Jira Software</li>
-        <li>Project Management</li>
-        <li>Public Speaking</li>
-        <li>Leadership</li>
-        <li>Microsoft Suite</li>
-      </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Accordion-->
-
-  <section class="p-5 " id="projects">
-    <div class="container-fluid">
-      <h2 class="text-center mb-4">Projects</h2>  
-      <div class="accordion accordion-flush" id="Projects">
-        <!-- Item 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-one">
-              Digital Resumé
-            </button>
-          </h2>
-          <div id="project-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
-          </div>
         </div>
-        <!-- Item 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-two">
-              To Do List
-            </button>
-          </h2>
-          <div id="project-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body lead">Coming Soon!!</div>
-          </div>
+      </section>
+
+      <section class="section--page">
+        <h2>Projects & Accomplishments</h2>
+
+        <div class="card--project">
+          <a href="#"><span>🏆 </span>Built Netflix Clone with React</a>
         </div>
-        <!-- Item 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-three">
-              Project 3
-            </button>
-          </h2>
-          <div id="project-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#project">
-            <div class="accordion-body lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, neque. Odit eveniet enim, eum nihil incidunt quam, placeat necessitatibus temporibus iusto itaque et explicabo fugit eius inventore ullam neque ratione nesciunt exercitationem? Neque, quo? Amet, harum cupiditate. Quis, quas, eaque corrupti excepturi quasi cupiditate officia, esse aspernatur tenetur adipisci quisquam.</div>
-          </div>
+
+        <div class="card--project">
+          <a href="#"><span>🏆 </span></a>
         </div>
-      
+
+        <div class="card--project">
+          <a href="#"
+            ><span>🏆 </span>Ecommerce platform using paypal and stripe API for
+            payment integration</a
+          >
+        </div>
+
+        <div class="card--project">
+          <a href="#"><span>🏆 </span></a>
+        </div>
+      </section>
     </div>
-   </section>
-
-
-<!-- Footer -->
-<footer class="text-white text-center position-relative p-5">
-  <div class="container">
-    <p class="lead fw-bold fs-3">Get in Touch</p>
-    
-    <a href="https://www.linkedin.com/in/karabo-ramathesele-9aa7581a4" target="_blank">
-      <i class="animate__animated animate__bounce bi bi-linkedin h1"></i>
-    </a>
-    <a href="https://www.facebook.com/karabo.ramathesele" target="_blank">
-      <i class=" animate__animated animate__bounce  bi bi-facebook h1 p-5"></i>
-    </a>
-    <a href="#" >
-      <i class="animate__animated animate__bounce bi bi-envelope h1 "></i>
-    </a>
-    
-    <p class="lead p-5 fs-4">Copyright &copy; 2022</p>
-    <a href="#" class="position-absolute bottom-0 end-0 p-5">
-      <i class="bi bi-arrow-up-circle h1"></i>
-    </a>
-  </div>
-</footer>
-
-<!-- Modal -->
-<div class="modal fade" id="enroll" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="enrollLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body mb-3">
-        <p class="lead">Connect on Linkedin</p>
-        <form action="">
-          <label for="first-name" class="col-form-label">Linkdin URL</label>
-          <input type="url" class="form-control" id="first-name">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Connect</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
